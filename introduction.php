@@ -69,5 +69,67 @@ echo 'Age : '. $age . ' ans';
 echo '<br><br>';
 
 echo `test`;
+echo '<br><br>';
+
+// Tableau simple
+$fruits = array("Bannane", "Orange", "Pomme");
+echo $fruits[0]; // Affiche "Banane"
+echo '<br><br>';
+$fruits2 =["Mangue", "Raisin"];
+var_dump($fruits2);
+echo '<br><br>';
+
+
+// Tablea associatif
+$utilisateur = ["nom" => "Dupond", "prenom" => "Jean", "age" => 26];
+echo $utilisateur["nom"].' '.$utilisateur["prenom"].' '.$utilisateur["age"].' ans'; // Affiche "Dupond Jean 26 ans"
+
+
+echo '<br><br>';
+
+$utilisateurs = [
+  ["nom" => "Dupond", "prenom" => "Jean", "age" => 26],
+  ["nom" => "Martin", "prenom" => "Rose", "age" => 35],
+  ["nom" => "Doe", "prenom" => "Jane", "age" => 31]
+];
+echo $utilisateurs[2]["nom"].' '.$utilisateurs[2]["prenom"].' '.$utilisateurs[2]["age"].' ans'; // Affiche "Doe Jane 31 ans"
+echo '<br><br>';
+var_dump($utilisateurs[0]);
+echo '<br><br>';
+var_dump($utilisateurs);
+echo '<br><br>';
+
+foreach ($utilisateurs as $key => $value) {
+  echo $key.' '.$value['nom'].' '.$value['prenom'].' '.$value['age'].' ans<br>';
+}
+echo '<br><br>Boucle for<br>';
+
+for ($i = 1; $i <= 10; $i++) {
+  echo "$i ";
+}
+
+echo '<br><br>Boucle While<br>';
+
+
+$j = 1;
+while ($j <+ 10) {
+  echo "$j ";
+  $j++;
+}
+echo '<br><br>';
+
+echo "include n'affiche pas d'erreur<br>";
+echo "include once = include juste une fois<br>";
+echo "require = fatal error si erreur -> conseilé<br>";
+echo "require once = require une seul fois<br>";
+echo '<br><br>';
+
+
+
+
+
+
+
+
 
 ?>
