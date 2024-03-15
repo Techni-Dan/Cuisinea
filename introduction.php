@@ -118,7 +118,7 @@ while ($j <+ 10) {
 }
 echo '<br><br>';
 
-echo "include n'affiche pas d'erreur<br>";
+echo "<strong>include</strong> n'affiche pas d'erreur si erreur<br>";
 echo "include once = include juste une fois<br>";
 echo "require = fatal error si erreur -> conseilé<br>";
 echo "require once = require une seul fois<br>";
