@@ -1,6 +1,7 @@
 <?php
   require_once('lib/config.php');
-
+  require_once('lib/pdo.php');
+  
   // var_dump($_SERVER['SCRIPT_NAME']);
  $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
