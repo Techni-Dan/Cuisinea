@@ -23,7 +23,7 @@ if ($recipe) {
   </div>
   <div class="col-lg-6">
     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><?= $recipe['title']?></h1>
-    <p class="lead"><?= $recipe['description']?></p>
+    <p class="lead"><?=nl2br($recipe['description']);?></p>
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
       
     </div>
