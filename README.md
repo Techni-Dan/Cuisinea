@@ -21,7 +21,7 @@ Les utilisateurs peuvent parcourir les recettes par catégorie, afficher des ins
 - Vues de recettes détaillées avec ingrédients, instructions et image.
 - Fonctionnalité de recherche de recettes (implémentation future).
 - Enregistrement et connexion des utilisateurs.
-- Possibilité pour les utilisateurs enregistrés d'ajouter et de modifier des recettes (rôle admin).
+- Possibilité pour les utilisateurs enregistrés d'ajouter et de modifier des recettes.
 
 ## Démarrage
 
@@ -50,7 +50,7 @@ git clone git@github.com:Techni-Dan/Cuisinea.git
 - **index.php**: La page d'accueil principale.
 - **recettes.php**: Affiche une liste de recettes.
 - **recette.php**: Affiche une vue détaillée d'une seule recette.
-- **ajout_modification_recette.php**: Formulaire pour ajouter/modifier des recettes (utilisateurs admins).
+- **ajout_modification_recette.php**: Formulaire pour ajouter/modifier des recettes.
 - **templates/**: Contient les fichiers de template HTML.
 - **lib/**: Contient la logique du projet (session.php, recipe.php, user.php, etc.).
 - **assets/**: Inclut les images, les fichiers CSS et JavaScript.
