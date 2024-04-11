@@ -14,7 +14,7 @@
     $user = verifyUserLoginPassword($pdo, $_POST['email'], $_POST['password']);
 
     if ($user) {
-        $_SESSION['user'] = ['email' => $user['email']];
+        $_SESSION['user'] = ['email' => $user['email'], ['role' => $user['role']]];
         header('location: index.php');
     } else {
         $errors[] = 'Email ou mot de passe incorrect';

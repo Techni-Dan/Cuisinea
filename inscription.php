@@ -1,6 +1,7 @@
 <?php
   require_once('templates/header.php');
   require_once('lib/user.php');
+  require_once('email.php');
 
   $errors = [];
   $messages = [];
@@ -15,6 +16,7 @@
 
     if ($res) {
         $messages[] = 'Merci pour votre inscription';
+        sendMail();
     } else {
         $errors[] = 'Une erreur s\'est produite lors de votre inscription';
     }
