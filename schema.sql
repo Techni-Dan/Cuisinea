@@ -31,4 +31,4 @@ CREATE TABLE IF NOT EXISTS users (
     role VARCHAR(255) DEFAULT 'subscriber'
 );
 
-INSERT INTO `users` (`id`, `email`, `password`, `first_name`, `last_name`, `role`) VALUES (1, 'test@mail.com', '$2y$13$Uw2an3wQTYcBqGe0LMIn1OQxyUa4iQLwTZ1IoW2kj3CEcB0l8G7Sm', 'John', 'Doe', 'subscriber');
+INSERT INTO `users` (`id`, `email`, `password`, `first_name`, `last_name`, `role`) VALUES (1, 'test@mail.com', '$2y$13$Uw2an3wQTYcBqGe0LMIn1OQxyUa4iQLwTZ1IoW2kj3CEcB0l8G7Sm', 'John', 'DOE', 'subscriber');

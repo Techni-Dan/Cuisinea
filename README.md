@@ -32,7 +32,11 @@ git clone git@github.com:Techni-Dan/Cuisinea.git
 
 2. Configurer la base de données:
 
-- Importez le schéma de la base de données à partir du fichier [schema.sql](schema.sql) dans phpMyAdmin: [http://127.0.0.1/phpmyadmin/index.php?route=/](http://127.0.0.1/phpmyadmin/index.php?route=/).
+- Importez le schéma de la base de données à partir du fichier [schema.sql](schema.sql) dans phpMyAdmin. Ouvrez phpMyAdmin [http://127.0.0.1/phpmyadmin/index.php?route=/](http://127.0.0.1/phpmyadmin/index.php?route=/) et sélectionez l'onglet Importer,  cliquez sur le bouton Choisir un fichier et sélectionez le fichier schema.sql depuis le repertoire de votre projet /Cuisinea et puis cliquez sur le bouton Importer. 
+
+- Ce fichier a été écrit à la main et permet de créer la base de données Cuisinea et d'insérer des données dans cette base de données via PhpMyAdmin.
+- Parmi d'autres données, un utilisateur a été inséré dans la base de données :
+  -**DOE John, email: test@mail.com, mot de passe: test**.
 
 3. Exécuter l'application
 
