@@ -1,5 +1,5 @@
 <div class="col-md-4">
-  <div class="card">
+  <div class="card mb-3">
     <img src="<?=getRecipeImage($recipe['image']); ?>" class="card-img-top" alt="<?= $recipe['title'] ?>">
     <div class="card-body">
       <h4 class="card-title"><?= $recipe['title'] ?></h4>
