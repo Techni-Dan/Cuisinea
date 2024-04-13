@@ -33,7 +33,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between min-vh-100 snippet-body">
 
   <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -60,3 +60,6 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
         <?php } ?>
       </div>
     </header>
+  </div>
+  <div class="flex-grow-1">
+  <div class="container">

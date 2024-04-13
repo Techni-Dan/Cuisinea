@@ -39,6 +39,7 @@ function getRecipes(PDO $pdo, int $limit = null)
   }
   $query->execute();
   //var_dump($sql);
+  //var_dump($query->fetchAll());
   return $query->fetchAll();
 }
 
