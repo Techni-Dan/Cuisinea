@@ -21,10 +21,19 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="text-center py-2 text-warning">
+        Site Web démonstratif -> Application web réalisé pour une évaluation.
+      </div>
+    </div>
   </div>
 </footer>
 </div>
-<script src="assets/js/script.js"></script>
+<?php
+if ($currentPage == "recettes.php") { ?>
+  <script src="assets/js/script.js"></script>
+
+<?php }  ?>
 </body>
 
 </html>

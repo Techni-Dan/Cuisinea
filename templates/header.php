@@ -36,30 +36,31 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
 <body class="d-flex flex-column justify-content-between min-vh-100 snippet-body">
 
   <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none">
+    <nav class="navbar navbar-expand-lg bg-ligth text-white py-3 mb-4 border-bottom" data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.php" title="Accueil">
           <img src="assets/images/logo-cuisinea-horizontal.jpg" alt="logo Cuisinea" width="250">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ms-auto">
+            <?php foreach ($mainMenu as $key => $value) { ?>
+              <li class="nav-item"><a href="<?= $key ?>" class="nav-link px-2 <?php if ($currentPage === $key) {
+                                                                                echo 'active';
+                                                                              } ?>"><?= $value ?></a></li>
+            <?php } ?>
+          </ul>
+          <?php if (!isset($_SESSION['user'])) { ?>
+            <a href="login.php" class="btn btn-outline-primary me-2">Se connecter</a>
+            <a href="inscription.php" class="btn btn-outline-primary me-2">S'inscrire</a>
+          <?php } else { ?>
+            <a href="logout.php" class="btn btn-primary">Se déconnecter</a>
+          <?php } ?>
+        </div>
       </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
-        <?php foreach ($mainMenu as $key => $value) { ?>
-          <li class="nav-item"><a href="<?= $key ?>" class="nav-link px-2 <?php if ($currentPage === $key) {
-                                                                            echo 'active';
-                                                                          } ?>"><?= $value ?></a></li>
-        <?php } ?>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <?php if (!isset($_SESSION['user'])) { ?>
-          <a href="login.php" class="btn btn-outline-primary me-2">Se connecter</a>
-          <a href="inscription.php" class="btn btn-outline-primary me-2">S'inscrire</a>
-        <?php } else { ?>
-          <a href="logout.php" class="btn btn-primary">Se déconnecter</a>
-        <?php } ?>
-      </div>
-    </header>
+    </nav>
   </div>
   <div class="flex-grow-1">
-  <div class="container">
+    <div class="container">
