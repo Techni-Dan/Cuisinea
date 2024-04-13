@@ -19,7 +19,7 @@ Les utilisateurs peuvent parcourir les recettes par catégorie, afficher des ins
 
 - Liste de recettes avec image, titre et brève description.
 - Vues de recettes détaillées avec ingrédients, instructions et image.
-- Fonctionnalité de recherche de recettes (implémentation future).
+- Fonctionnalité de filtrage & recherche de recettes.
 - Enregistrement et connexion des utilisateurs.
 - Possibilité pour les utilisateurs enregistrés d'ajouter et de modifier des recettes.
 

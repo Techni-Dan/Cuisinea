@@ -60,7 +60,7 @@ if (isset($_POST['saveRecipe'])) {
 }
 //var_dump($_SESSION['user']);
 if (isset($_SESSION['user'])) {
-  // This code block will execute only if the user role is 'admin'
+  // This code block will execute only if the user role is 'admin' -- in the future
 
 
 ?>

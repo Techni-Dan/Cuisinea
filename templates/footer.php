@@ -1,39 +1,39 @@
-<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-  <div class="col mb-3">
-    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-    </a>
-    <p class="text-body-secondary">© 2024</p>
-  </div>
+</div>
+</div>
+<footer class="container-fluid text-center">
+  <div class="container">
+    <div class="row pt-3 border-top">
+      <div class="col">
+        <h5>GitHub Repo</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://github.com/Techni-Dan/Cuisinea" target="_blank"="nav-link p-0 text-body-secondary"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
 
-  <div class="col mb-3">
+      <div class="col">
+        <p class="text-body-secondary">© 2024</p>
+      </div>
 
-  </div>
-
-  <div class="col mb-3">
-    <h5>GitHub Repo</h5>
-    <ul class="nav flex-column">
-      <li class="nav-item mb-2"><a href="https://github.com/Techni-Dan/Cuisinea" target="_blank" ="nav-link p-0 text-body-secondary"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-  </div>
-
-  <div class="col mb-3">
-    <h5></h5>
-    <ul class="nav flex-column">
-      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
-    </ul>
-  </div>
-
-  <div class="col mb-3">
-    <h5></h5>
-    <ul class="nav flex-column">
-      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
-    </ul>
+      <div class="col">
+        <h5></h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">A propos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center py-2 text-warning">
+        Site Web démonstratif -> Application web réalisé pour une évaluation.
+      </div>
+    </div>
   </div>
 </footer>
 </div>
+<?php
+if ($currentPage == "recettes.php") { ?>
+  <script src="assets/js/script.js"></script>
+
+<?php }  ?>
 </body>
 
 </html>
