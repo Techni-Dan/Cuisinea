@@ -110,7 +110,7 @@ if (isset($_SESSION['user'])) {
       <label for="file" class="form-lable">Image</label>
       <input type="file" name="file" id="file">
     </div>
-    <input type="submit" value="Enregistrer" name="saveRecipe" class="btn btn-primary">
+    <input type="submit" value="Enregistrer" name="saveRecipe" class="btn btn-primary mb-3">
   </form>
 <?php } else { ?>
   <p>You are not an admin.</p>

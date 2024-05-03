@@ -52,7 +52,12 @@
   --bs-nav-pills-link-active-bg: var(--primary);
 }
 
+body {
+  font: 14px / 24px "Roboto";
+}
+
 h1 {
+  font: 40px "Georgia";
   color: var(--primary);
 }
 
